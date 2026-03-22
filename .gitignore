@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env/
+.venv/
+
+# Environment variables (VERY IMPORTANT)
+.env
+
+# Streamlit
+.streamlit/
+
+# Data files (your PDFs, FAISS index, cache)
+data/
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
+
+# FAISS index files
+*.faiss
+*.index
+
+# Model cache (optional)
+.cache/
