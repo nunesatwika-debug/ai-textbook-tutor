@@ -1,6 +1,6 @@
-# 📘 Low-Cost AI Textbook Tutor with Context Pruning
+#  Low-Cost AI Textbook Tutor with Context Pruning
 
-## 🚀 Overview
+##  Overview
 
 Personalized AI tutors are powerful but expensive to run, especially in low-resource environments like rural India.
 This project builds an **intelligent, cost-efficient tutoring system** that can ingest full textbooks and answer questions while minimizing API usage and latency.
