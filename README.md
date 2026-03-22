@@ -24,14 +24,14 @@ We implement a **Hybrid RAG (Retrieval-Augmented Generation) system** with:
 
 * One-time PDF ingestion
 * Semantic retrieval using FAISS
-* ✂️ Context pruning (main innovation)
-* 🧠 Query-aware compression using ScaleDown
-* 🤖 Final answer generation using OpenRouter / Groq
-* ⚡ Caching for repeated queries
+* Context pruning (main innovation)
+* Query-aware compression using ScaleDown
+* Final answer generation using OpenRouter / Groq
+* Caching for repeated queries
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 PDF → Text Extraction → Chapter Split → Chunking → Embeddings → FAISS Index
@@ -53,9 +53,9 @@ Final Answer
 
 ---
 
-## 🔥 Key Features
+## Key Features
 
-### ✅ Context Pruning (Core Innovation)
+### Context Pruning (Core Innovation)
 
 * Reduces irrelevant textbook content
 * Keeps only top 3–4 most relevant chunks
@@ -63,7 +63,7 @@ Final Answer
 
 ---
 
-### ✅ Token & Cost Optimization
+### Token & Cost Optimization
 
 * 60–80% reduction in tokens sent to LLM
 * Faster response times
@@ -71,21 +71,21 @@ Final Answer
 
 ---
 
-### ✅ Smart Retrieval
+### Smart Retrieval
 
 * FAISS-based semantic search
 * Chapter-aware filtering
 
 ---
 
-### ✅ Query-Aware Compression (ScaleDown)
+### Query-Aware Compression (ScaleDown)
 
 * Compresses context before sending to LLM
 * Further reduces token usage
 
 ---
 
-### ✅ Answer Modes
+### Answer Modes
 
 * Simple explanation
 * 2-mark answer (concise)
@@ -93,7 +93,7 @@ Final Answer
 
 ---
 
-### ✅ Caching System
+### Caching System
 
 * Stores previous answers
 * Avoids repeated API calls
@@ -101,7 +101,7 @@ Final Answer
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 | Component           | Technology           |
 | ------------------- | -------------------- |
@@ -111,12 +111,12 @@ Final Answer
 | Embeddings          | SentenceTransformers |
 | Vector DB           | FAISS                |
 | Context Compression | ScaleDown API        |
-| LLM                 | OpenRouter / Groq    |
+| LLM                 | OpenRouter           |
 | Environment         | Python venv          |
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 ai-textbook-tutor/
@@ -145,9 +145,9 @@ ai-textbook-tutor/
 
 ---
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 
-### 1️⃣ Clone Repository
+###  Clone Repository
 
 ```bash
 git clone https://github.com/nunesatwika-debug/ai-textbook-tutor.git
@@ -156,7 +156,7 @@ cd ai-textbook-tutor
 
 ---
 
-### 2️⃣ Create Virtual Environment
+### Create Virtual Environment
 
 ```bash
 python -m venv venv
@@ -165,7 +165,7 @@ venv\Scripts\activate   # Windows
 
 ---
 
-### 3️⃣ Install Dependencies
+### Install Dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -173,7 +173,7 @@ pip install -r requirements.txt
 
 ---
 
-### 4️⃣ Configure Environment Variables
+### Configure Environment Variables
 
 Create `.env` file:
 
@@ -187,7 +187,7 @@ LLM_MODEL=deepseek/deepseek-chat
 
 ---
 
-### 5️⃣ Run Application
+### Run Application
 
 ```bash
 python -m streamlit run app.py
@@ -195,7 +195,7 @@ python -m streamlit run app.py
 
 ---
 
-## 📊 Example Output
+## Example Output
 
 | Metric           | Baseline RAG | Our System     |
 | ---------------- | ------------ | -------------- |
@@ -207,7 +207,7 @@ python -m streamlit run app.py
 
 ---
 
-## 🧠 Key Innovation
+## Key Innovation
 
 > Instead of sending entire textbook context, we **intelligently prune and compress context**, ensuring:
 
@@ -217,7 +217,7 @@ python -m streamlit run app.py
 
 ---
 
-## 🌍 Impact
+## Impact
 
 This system enables:
 
@@ -228,27 +228,27 @@ This system enables:
 
 ---
 
-## 🚧 Future Improvements
+##  Future Improvements
 
-* 📊 Weak-area tracking for personalization
-* 🌐 Multilingual support (English + Telugu/Hindi)
-* 🧪 Quiz generation (MCQs)
-* 📱 Mobile-friendly UI
-* 🧠 Offline fallback with local models
+*  Weak-area tracking for personalization
+*  Multilingual support (English + Telugu/Hindi)
+*  Quiz generation (MCQs)
+*  Mobile-friendly UI
+*  Offline fallback with local models
 
 ---
 
-## 👨‍💻 Team
+##  Team
 
 * Built as part of a collaborative project
 * Focused on efficient AI systems for education
 
 ---
 
-## ⭐ Final Note
+## Final Note
 
 > This project demonstrates how **smart engineering (context pruning + compression)** can make advanced AI systems **affordable and scalable**.
 
 ---
 
-✨ If you like this project, consider starring the repo!
+ If you like this project, consider starring the repo!
