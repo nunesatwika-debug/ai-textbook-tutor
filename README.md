@@ -18,12 +18,12 @@ The core innovation is **Context Pruning**, where only the most relevant parts o
 
 ---
 
-## 💡 Solution
+## Solution
 
 We implement a **Hybrid RAG (Retrieval-Augmented Generation) system** with:
 
-* 📄 One-time PDF ingestion
-* 🔍 Semantic retrieval using FAISS
+* One-time PDF ingestion
+* Semantic retrieval using FAISS
 * ✂️ Context pruning (main innovation)
 * 🧠 Query-aware compression using ScaleDown
 * 🤖 Final answer generation using OpenRouter / Groq
