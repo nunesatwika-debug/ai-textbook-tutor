@@ -9,7 +9,7 @@ The core innovation is **Context Pruning**, where only the most relevant parts o
 
 ---
 
-## 🎯 Problem Statement
+##  Problem Statement
 
 * Large textbook PDFs must be processed efficiently
 * Avoid sending entire documents to LLMs for every query
